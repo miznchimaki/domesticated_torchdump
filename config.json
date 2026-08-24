@@ -1,0 +1,45 @@
+{
+    "dump": {
+        "task":"default",
+        "output_dir": "./dump_dir",
+        "dump_level": 2,
+        "dump_stack": true,
+        "dump_input": true,
+        "dump_output": true,
+        "op_range": [],
+        "op_list": [],
+        "skip": 0,
+        "ranks": [],
+        "dump_distributed": "yes",
+        "iters": [],
+        "online": {
+            "ip_and_port": "",
+            "tcp_send_queue_size": 10
+        },
+        "grad_stats": {
+            "grad_level": "L1",
+            "param_list": [],
+            "bounds": [-1, 0, 1]
+        },
+        "overflow_check": {
+            "overflow_nums": 1
+        },
+        "free_benchmark": {
+            "mode": "check",
+            "stage": "forward",
+            "disturb_factor": "type_promotion"
+        }
+    },
+
+    "replay": {
+        "diff1_static_threshold": 3e-3,
+        "diff2_static_threshold": 3e-3,
+        "dtype_static_thresholds": {},
+        "per_op_thresholds": {
+        },
+        "dynamic_accuracy_check": false,
+        "online_whitelist": [],
+        "online_blacklist": []
+    }
+}
+

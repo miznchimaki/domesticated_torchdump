@@ -1,0 +1,14 @@
+*.a
+*.bin
+*.dylib
+*.o
+*.onnx
+*.pt
+*.pth
+*.so
+*.so.*
+*.tar.gz
+*.whl
+__pycache__/
+build/
+dist/
